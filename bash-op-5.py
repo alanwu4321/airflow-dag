@@ -8,7 +8,7 @@ default_args = {
     'owner': 'airflow',
 }
 @dag(default_args=default_args, schedule_interval=None, start_date=days_ago(2), tags=['example'])
-def tutorial_taskflow_api_etl_4():
+def tutorial_taskflow_api_etl_5():
     """
     ### TaskFlow API Tutorial Documentation
     This is a simple ETL data pipeline example which demonstrates the use of
@@ -54,4 +54,4 @@ def tutorial_taskflow_api_etl_4():
     order_data = extract()
     order_summary = transform(order_data)
     load(order_summary["total_order_value"])
-tutorial_etl_dag = tutorial_taskflow_api_etl_4()
+tutorial_etl_dag = tutorial_taskflow_api_etl_5()
